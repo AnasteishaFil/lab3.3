@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+	line-height: 1.6;
+	background: linear-gradient(to top left, rgb(250, 180, 220), rgb(110, 0, 150)) no-repeat;
+}
+h1, h2, h3, h4, h5, h6 {margin: 0}
+
+section{
+	width: 100%;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main{
+	width: 54%;
+	margin: 0 auto;
+	background: rgb(250, 216, 233);
+	border-radius: 35px;
+	padding: 30px 10px 30px 10px;
+	font-family: 'Marck Script', cursive;
+	text-align: center;
+	font-size: 27px;
+}
+
+.title{
+	width: 50%;
+	margin: 0 auto;
+	animation: vihod 3s ease-in;
+}
+.dog{
+	width: 80px;
+	display: block;
+	margin: 5px auto;
+}
+h1{
+	font-size: 70px;
+	color: rgb(110, 0, 150);
+	text-align: center;
+}
+
+@keyframes vihod{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.wrapper {
+	height: 80vh;
+	width: 300px;
+}
+.slider {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.slider	.slider__item_k {
+	background-repeat: no-repeat;
+	background-position: cover;
+	overflow: hidden;
+	animation: examplek 10s infinite linear alternate;
+}
+.slider__item_k img{
+	width: 300px;
+	height: 200px
+}
+.slider	.slider__item {
+	background-repeat: no-repeat;
+	background-position: cover;
+	overflow: hidden;
+	animation: example 10s infinite linear alternate;
+}
+.slider__item img{
+	width: 300px;
+}
+
+@keyframes examplek {
+    0% {transform: translateY(0)}
+    100% {transform: translateY(-400%)}
+}
+@keyframes example {
+	0% {transform: translateY(0)}
+	100% {transform: translateY(-300%)}
+}
